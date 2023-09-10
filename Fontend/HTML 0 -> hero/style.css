@@ -1,0 +1,30 @@
+html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.box {
+    height: 100px;
+    background-color: #333;
+    display: flex;
+}
+
+h3 {
+    color: #fff;
+    margin: auto;
+    position: relative;
+
+
+
+}
+
+h3::after {
+    position: absolute;
+    left: -10px;
+    content: "";
+    border-left: 3px solid #fff;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
